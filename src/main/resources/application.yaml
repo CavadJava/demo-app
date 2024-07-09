@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: demo-app-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8765/discovery/eureka
+  instance:
+    prefer-ip-address: true
+
+server:
+  servlet:
+    context-path: /api/demo-app
